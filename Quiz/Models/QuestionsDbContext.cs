@@ -17,6 +17,8 @@ namespace Quiz.Models
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Question>().HasData(new Question() { Id = System.Guid.NewGuid(), Text = "How many fingers do person have?", Correct = "20", Incorrect = "10" });
+            modelBuilder.Entity<Question>().HasData(new Question() { Id = System.Guid.NewGuid(), Text = "What's the temperature of Sun?", Correct = "about 5500°C", Incorrect = "about 7893°C" });
+            modelBuilder.Entity<Question>().HasData(new Question() { Id = System.Guid.NewGuid(), Text = "What CPU means?", Correct = "Central Processing Unit", Incorrect = "Control Processing Utility" });
         }
     }
 }
